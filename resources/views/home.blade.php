@@ -21,15 +21,3 @@
 @include('include.nav-bar')
 
 </body>
-<script>
-        var isopen = true;
-      $("#toggle-sidebar").click(function(){
-        if (isopen){
-          $('#panel-title').css("font-size","1.2rem");
-          $('#panel-title').innerHTML = "";
-        }else {
-          $('#panel-title').css("font-size","1.9rem");
-        }
-        isopen = !isopen;
-      });
-</script>

@@ -4,10 +4,11 @@
     <div id="sidebar" class="bg-warning">
         <div class="side-menu-container ">
             <ul class="metismenu" id="side-menu" style="min-height: 500px">
-                <li class="">
-                    <a href="#">
-                    <i class="icon-home"></i>
-                    <span style="font-size: 1.9rem">سفارشات الان</span>
+                <li class="" style="background-color: rgba(255,187,3,0.84)">
+                    <a href="{{url('/latest-orders')}}" class="example-1">
+                    <i class="icon-home text-white " style=""></i>
+                    <span style="font-size: 2rem; color: white;" class="">سفارشات الان</span>
+                        <span class="new-order2"> جدید </span>
                     </a>
                 </li>
                 <li class="">
@@ -17,25 +18,39 @@
                     </a>
                     <ul>
                         <li>
-                            <a href="{{url('/manage-products')}}" class="">
+                            <a href="{{url('/manage-foods')}}" class="">
                                 <i class="icon-briefcase"></i>
-                                <span>مدیریت غذاها</span>
+                                <span> غذاها</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="">
+                            <a href="{{url('/manage-dessert')}}" class="">
                                 <i class="icon-clock"></i>
-                                <span>مدیریت پیش غذاها</span>
+                                <span> پیش غذاها و مخلفات</span>
                             </a>
                         </li>
                     </ul>
                 </li>
 
                 <li class="">
-                    <a href="#" class="" data-toggle="">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="icon-magnifier"></i>
                         <span>گزارش گیری</span>
                     </a>
+                    <ul>
+                        <li>
+                            <a href="{{url('/manage-foods')}}" class="">
+                                <i class="icon-briefcase"></i>
+                                <span>فروش امروز</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{url('/manage-dessert')}}" class="">
+                                <i class="icon-clock"></i>
+                                <span> سایر</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
 
                 <li class="">

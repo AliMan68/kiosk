@@ -18,3 +18,23 @@ Route::get('/', function () {
 Route::get('/manage-products', function () {
     return view('site.manage-product');
 });
+
+Route::get('/manage-foods', function () {
+    return view('site.manage-products.food');
+});
+
+Route::get('/manage-dessert', function () {
+    return view('site.manage-products.dessert');
+});
+
+Route::get('/dessert-edit', function () {
+    return view('site.manage-products.dessert-edit');
+});
+
+Route::get('/food-edit', function () {
+    return view('site.manage-products.food-edit');
+});
+
+Route::get('/latest-orders', function () {
+    return view('site.latest-orders');
+});

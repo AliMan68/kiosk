@@ -264,6 +264,66 @@ li.dropdown .dropdown-menu{
 .btn-round{
     border-radius: 50px !important;
 }
+.del-btn{
+  background-color: rgba(255,66,20,0.84);
+  border-radius: 4px;
+  border: 2px  rgba(255,0,75,0.84) solid;
+  color: white;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.3rem;
+  min-width: 60px;
+
+}
+.del-edit{
+  background-color: #097020;
+  border-radius: 4px;
+  border: 2px  #0f9388 solid;
+  color: white;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.3rem;
+  min-width: 60px;
+
+}
+table th{
+  color: #000;
+}
+table td{
+  color: #000;
+  font-size: 1.5rem;
+}
+
+@keyframes neon {
+  0% {
+    background-color: #ff9f30;
+    /*font-size: 2.5rem;*/
+  }
+  100% {
+    background-color: #ff1615;
+    /*font-size: 2.6rem;*/
+  } }
+.new-order{
+  padding: 7px;
+  font-size: 1.4rem;
+  text-align: center;
+  border: 3px #555555 dotted;
+  border-radius: 3px;
+  color: white;
+  /*background-color: #ff9f30;*/
+  animation: neon 0.36s infinite ;
+}
+.new-order2{
+  padding: 3px;
+  font-size: 1.4rem;
+  text-align: center;
+  border: 3px #555555 dotted;
+  border-radius: 3px;
+  color: white;
+  /*background-color: #ff9f30;*/
+  animation: neon 0.36s infinite ;
+}
+
 .btn-curve{
     border-radius: 4px !important;
 }
@@ -2042,6 +2102,30 @@ body.modal-open .navbar-fixed-top{right: 17px}
 .panel.round>.panel-heading {
     border-radius: 15px 15px 0 0;
 }
+li i{
+  color: white;
+}
+.selection label{
+  color: #000;
+}
+.form-group label {
+  color: #000;
+}
+
+
+
+/*.example-1*/
+/*{*/
+  /*height: 60px;*/
+  /*z-index: 1000;*/
+  /*color: #fff;*/
+  /*text-align: center;*/
+  /*border-radius: 15%;*/
+  /*padding: 2px;*/
+  /*animation: shadow-pulse 1.2s infinite;*/
+/*}*/
+
+
 .panel>.panel-footer{
     padding: 2px 10px 6px 10px;
     border-radius: 0;

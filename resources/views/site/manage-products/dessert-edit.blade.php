@@ -27,7 +27,7 @@
                             <div class="portlet-title">
                                 <h3 class="title">
                                     <i class="icon-fire"></i>
-                                    افزودن غذا
+                                    ویرایش سالاد فصل
                                 </h3>
                             </div>
                             <div class="buttons-box">
@@ -45,46 +45,55 @@
                                     {{csrf_field()}}
                                     <div class="form-body">
 
-                                            <div class="form-group">
-                                                <label>نام غذا</label>
-                                                <div class="input-group round">
+                                        <div class="form-group">
+                                            <label> نام </label>
+                                            <div class="input-group round">
                                                 <span class="input-group-addon">
                                                     <i class="icon-info"></i>
                                                 </span>
-                                                    <input type="text" name="name" class="form-control" value="" placeholder="نام غذا وارد شود">
-                                                </div>
+                                                <input type="text" name="name" class="form-control" value="" placeholder="">
                                             </div>
+                                        </div>
 
-                                            <div class="form-group relative">
-                                                <input type="file" name="filename[]" class="form-control">
-                                                <label>عکس</label>
-                                                <div class="input-group round">
-                                                    <input type="text" class="form-control file-input" placeholder="برای آپلود کلیک کنید">
-                                                    <span class="input-group-btn input-group-sm">
+                                        <div class="form-group relative">
+                                            <input type="file" name="filename[]" class="form-control">
+                                            <label>عکس</label>
+                                            <div class="input-group round">
+                                                <input type="text" class="form-control file-input" placeholder="برای آپلود کلیک کنید">
+                                                <span class="input-group-btn input-group-sm">
                                                 <button type="button" class="btn btn-info">
                                                     <i class="icon-picture"></i>
                                                     آپلود عکس
                                                 </button>
                                             </span>
-                                                </div><!-- /.input-group -->
-                                            </div><!-- /.form-group -->
+                                            </div><!-- /.input-group -->
+                                        </div><!-- /.form-group -->
 
                                         <div class="form-group">
-                                            <label>قیمت اصلی</label>
+                                            <label>قیمت سایز کوچک</label>
                                             <div class="input-group round">
                                                 <span class="input-group-addon">
                                                     <i class="icon-info"></i>
                                                 </span>
-                                                <input type="number" name="name" class="form-control" value="" placeholder="قیمت به تومان وارد شود">
+                                                <input type="number" name="name" class="form-control" value="" placeholder="">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="price">قیمت با تخفیف</label>
+                                            <label>قیمت سایز متوسط</label>
                                             <div class="input-group round">
                                                 <span class="input-group-addon">
                                                     <i class="icon-info"></i>
                                                 </span>
-                                                <input type="number" name="name" class="form-control" value="" placeholder="قیمت به تومان وارد شود">
+                                                <input type="number" name="name" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>قیمت سایز بزرگ</label>
+                                            <div class="input-group round">
+                                                <span class="input-group-addon">
+                                                    <i class="icon-info"></i>
+                                                </span>
+                                                <input type="number" name="name" class="form-control" value="" placeholder="">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -93,35 +102,32 @@
                                                 <span class="input-group-addon">
                                                     <i class="icon-info"></i>
                                                 </span>
-                                                <input type="text" name="name" class="form-control" value="" placeholder="توضیحات مختصر">
+                                                <input type="text" name="name" class="form-control" value="" placeholder="">
                                             </div>
                                         </div>
 
-                                        </div>
-
-                                        <div class="form-actions">
-                                            <button type="submit" name="submit" class="btn btn-info btn-round">
-                                                <i class="icon-check"></i>
-                                                ذخیره
-                                            </button>
-                                        </div><!-- /.form-actions -->
                                     </div>
+                                    <div class="form-actions">
+                                        <button type="submit" name="submit" class="btn btn-info btn-round">
+                                            <i class="icon-check"></i>
+                                            ثبت تغییرات
+                                        </button>
+                                    </div><!-- /.form-actions -->
                                 </form>
-                            </div><!-- /.portlet-body -->
-                        </div><!-- /.portlet -->
-
-                    </div>
+                            </div>
+                        </div><!-- /.portlet-body -->
+                    </div><!-- /.portlet -->
                 </div>
             </div>
-
-            <!-- BEGIN PAGE JAVASCRIPT -->
-            <script src="{{ asset('plugins/data-table/js/jquery.dataTables.min.js') }}"></script>
-            <script src="{{ asset('plugins/data-table/js/dataTables.bootstrap.js') }}"></script>
-            <script src="{{ asset('js/pages/datatable.js') }}"></script>
-            <link href="{{ asset('plugins/data-table/css/dataTables.bootstrap.css') }}" rel="stylesheet">
-
         </div>
+        <!-- BEGIN PAGE JAVASCRIPT -->
+        <script src="{{ asset('plugins/data-table/js/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ asset('plugins/data-table/js/dataTables.bootstrap.js') }}"></script>
+        <script src="{{ asset('js/pages/datatable.js') }}"></script>
+        <link href="{{ asset('plugins/data-table/css/dataTables.bootstrap.css') }}" rel="stylesheet">
+
     </div>
+</div>
 </div>
 </body>
 

@@ -30,7 +30,7 @@
                 <li class="dropdown dropdown-user">
                     <a href="#" class="dropdown-toggle dropdown-hover" data-toggle="dropdown">
                         <img src="{{ asset('images/user/48.png') }}" alt="عکس پرفایل" class="img-circle img-responsive">
-                        <span>علی عربگری</span>
+                        <span class="text-dark">رستوران کاج</span>
                         <i class="icon-arrow-down"></i>
                     </a>
                     <ul class="dropdown-menu">
@@ -65,4 +65,5 @@
     isopen = !isopen;
   });
 </script>
+
 @include('include.header')

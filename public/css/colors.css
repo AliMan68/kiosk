@@ -37,7 +37,7 @@ body, #page-content {
 
 .theme-red .spinner {
   border: 3px solid #f55145;
-  border-left: 3px solid #ccc; }
+  border-left: 3px solid #fff; }
 .theme-red .grid-example {
   border: 1px solid #f55145; }
 .theme-red .double-bounce1, .theme-red .double-bounce2, .theme-red .scaleout, .theme-red .bounces > div, .theme-red .folding-cube .cube:before,
@@ -60,7 +60,7 @@ body, #page-content {
 
 .theme-green .spinner {
   border: 3px solid #8cc63f;
-  border-left: 3px solid #ccc; }
+  border-left: 3px solid #fff; }
 .theme-green .grid-example {
   border: 1px solid #8cc63f; }
 .theme-green .double-bounce1, .theme-green .double-bounce2, .theme-green .scaleout, .theme-green .bounces > div, .theme-green .folding-cube .cube:before,
@@ -83,7 +83,7 @@ body, #page-content {
 
 .theme-orange .spinner {
   border: 3px solid #ffbd15;
-  border-left: 3px solid #ccc; }
+  border-left: 3px solid #fff; }
 .theme-orange .grid-example {
   border: 1px solid #ffbd15; }
 .theme-orange .double-bounce1, .theme-orange .double-bounce2, .theme-orange .scaleout, .theme-orange .bounces > div, .theme-orange .folding-cube .cube:before,
@@ -106,7 +106,7 @@ body, #page-content {
 
 .theme-darkblue .spinner {
   border: 3px solid #13a2a6;
-  border-left: 3px solid #ccc; }
+  border-left: 3px solid #fff; }
 .theme-darkblue .grid-example {
   border: 1px solid #13a2a6; }
 .theme-darkblue .double-bounce1, .theme-darkblue .double-bounce2, .theme-darkblue .scaleout, .theme-darkblue .bounces > div, .theme-darkblue .folding-cube .cube:before,
@@ -129,7 +129,7 @@ body, #page-content {
 
 .theme-purple .spinner {
   border: 3px solid #9c27b0;
-  border-left: 3px solid #ccc; }
+  border-left: 3px solid #fff; }
 .theme-purple .grid-example {
   border: 1px solid #9c27b0; }
 .theme-purple .double-bounce1, .theme-purple .double-bounce2, .theme-purple .scaleout, .theme-purple .bounces > div, .theme-purple .folding-cube .cube:before,
