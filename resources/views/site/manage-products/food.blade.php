@@ -55,6 +55,21 @@
                                                 </div>
                                             </div>
 
+                                        <div class="form-group">
+                                            <label>دسته بندی</label>
+                                            <div class="input-group round">
+                                                <span class="input-group-addon">
+                                                    <i class="icon-info"></i>
+                                                </span>
+                                                <select class="form-control" name="status">
+                                                    <option value="1" >فست فود</option>
+                                                    <option value="2">نوشیدنی ها </option>
+                                                    <option value="3">پیش غذاها </option>
+                                                    <option value="4">نوشیدنی های گرم </option>
+                                                </select>
+                                            </div><!-- /.input-group -->
+                                        </div><!-- /.form-group -->
+
                                             <div class="form-group relative">
                                                 <input type="file" name="filename[]" class="form-control">
                                                 <label>عکس</label>
@@ -181,6 +196,7 @@
 
                                             </div>
                                               </div>
+
                                         <div class="form-group">
                                             <label>توضیحات </label>
                                             <div class="input-group round">
@@ -249,9 +265,13 @@
                                     {{--<td><img src="{{$currency->filename}}" height="35" class="rounded float-right" alt="{{$currency->name}}"></td>--}}
                                     <td class="text-black" >سالاد فصل</td>
                                     <td>
-                                        <a class="btn btn-sm del-btn "  href="#">
-                                            حذف
-                                        </a>
+                                        <form action=""  onsubmit="return confirm('آیا مطمئن هستید؟')" >
+                                            @csrf
+                                            <button class="btn btn-sm del-btn"  type="submit">
+                                                حذف
+                                            </button>
+
+                                        </form>
                                     </td>
                                     <td>
                                         <a class="btn btn-sm del-edit "  href="{{url('/food-edit')}}">
@@ -264,9 +284,13 @@
                                     {{--<td><img src="{{$currency->filename}}" height="35" class="rounded float-right" alt="{{$currency->name}}"></td>--}}
                                     <td contenteditable="true" >سالاد فصل</td>
                                     <td>
-                                        <a class="btn btn-sm  del-btn"  href="#">
-                                            حذف
-                                        </a>
+                                        <form action=""  onsubmit="return confirm('آیا مطمئن هستید؟')" >
+                                            @csrf
+                                            <button class="btn btn-sm del-btn"  type="submit">
+                                                حذف
+                                            </button>
+
+                                        </form>
                                     </td>
                                     <td>
                                         <a class="btn btn-sm del-edit "  href="{{url('/food-edit')}}">
@@ -279,9 +303,13 @@
                                     {{--<td><img src="{{$currency->filename}}" height="35" class="rounded float-right" alt="{{$currency->name}}"></td>--}}
                                     <td contenteditable="true" >سالاد فصل</td>
                                     <td>
-                                        <a class="btn btn-sm del-btn"  href="#">
-                                            حذف
-                                        </a>
+                                        <form action=""  onsubmit="return confirm('آیا مطمئن هستید؟')" >
+                                            @csrf
+                                            <button class="btn btn-sm del-btn"  type="submit">
+                                                حذف
+                                            </button>
+
+                                        </form>
                                     </td>
                                     <td>
                                         <a class="btn btn-sm del-edit "  href="{{url('/food-edit')}}">

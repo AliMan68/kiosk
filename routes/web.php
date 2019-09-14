@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('site.latest-orders');
 });
 
 Route::get('/manage-products', function () {
@@ -35,6 +35,6 @@ Route::get('/food-edit', function () {
     return view('site.manage-products.food-edit');
 });
 
-Route::get('/latest-orders', function () {
-    return view('site.latest-orders');
+Route::get('/categories', function () {
+    return view('site.manage-products.categories');
 });

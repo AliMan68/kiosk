@@ -5,7 +5,7 @@
         <div class="side-menu-container ">
             <ul class="metismenu" id="side-menu" style="min-height: 500px">
                 <li class="" style="background-color: rgba(255,187,3,0.84)">
-                    <a href="{{url('/latest-orders')}}" class="example-1">
+                    <a href="{{url('/')}}" class="example-1">
                     <i class="icon-home text-white " style=""></i>
                     <span style="font-size: 2rem; color: white;" class="">سفارشات الان</span>
                         <span class="new-order2"> جدید </span>
@@ -17,6 +17,12 @@
                         <span>مدیریت محصولات</span>
                     </a>
                     <ul>
+                        <li>
+                            <a href="{{url('/categories')}}" class="">
+                                <i class="icon-basket   "></i>
+                                <span> دسته بندی ها</span>
+                            </a>
+                        </li>
                         <li>
                             <a href="{{url('/manage-foods')}}" class="">
                                 <i class="icon-briefcase"></i>

@@ -27,7 +27,7 @@
                             <div class="portlet-title">
                                 <h3 class="title">
                                     <i class="icon-fire"></i>
-                                    افزودن دسر و پیش غذا
+                                    افزودن دسته بندی
                                 </h3>
                             </div>
                             <div class="buttons-box">
@@ -46,7 +46,7 @@
                                     <div class="form-body">
 
                                         <div class="form-group">
-                                            <label>نام </label>
+                                            <label>عنوان دسته بندی</label>
                                             <div class="input-group round">
                                                 <span class="input-group-addon">
                                                     <i class="icon-info"></i>
@@ -68,54 +68,15 @@
                                             </span>
                                             </div><!-- /.input-group -->
                                         </div><!-- /.form-group -->
-
-                                        <div class="form-group">
-                                            <label>قیمت سایز کوچک</label>
-                                            <div class="input-group round">
-                                                <span class="input-group-addon">
-                                                    <i class="icon-info"></i>
-                                                </span>
-                                                <input type="number" name="name" class="form-control" value="" placeholder="در صورت وجود">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>قیمت سایز متوسط</label>
-                                            <div class="input-group round">
-                                                <span class="input-group-addon">
-                                                    <i class="icon-info"></i>
-                                                </span>
-                                                <input type="number" name="name" class="form-control" value="" placeholder="در صورت وجود">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>قیمت سایز بزرگ</label>
-                                            <div class="input-group round">
-                                                <span class="input-group-addon">
-                                                    <i class="icon-info"></i>
-                                                </span>
-                                                <input type="number" name="name" class="form-control" value="" placeholder="در صورت وجود">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>توضیحات </label>
-                                            <div class="input-group round">
-                                                <span class="input-group-addon">
-                                                    <i class="icon-info"></i>
-                                                </span>
-                                                <input type="text" name="name" class="form-control" value="" placeholder="توضیحات مختصر">
-                                            </div>
-                                        </div>
-
                                     </div>
-
                                     <div class="form-actions">
                                         <button type="submit" name="submit" class="btn btn-info btn-round">
                                             <i class="icon-check"></i>
                                             ذخیره
                                         </button>
                                     </div><!-- /.form-actions -->
-                                        </form>
-                                 </div>
+                                </form>
+                            </div>
                         </div><!-- /.portlet-body -->
                     </div><!-- /.portlet -->
 
@@ -128,7 +89,7 @@
                     <div class="portlet-title">
                         <h3 class="title">
                             <i class="icon-user"></i>
-                            لیست  پیش غذاها و مخلفات
+                            همه دسته بندی ها
                         </h3>
                     </div>
                     <div class="buttons-box">
@@ -159,63 +120,82 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        {{--<td><img src="{{$currency->filename}}" height="35" class="rounded float-right" alt="{{$currency->name}}"></td>--}}
-                                        <td class="text-black" >سالاد فصل</td>
-                                        <td>
-                                            <form action=""  onsubmit="return confirm('آیا مطمئن هستید؟')" >
-                                                @csrf
-                                                <button class="btn btn-sm del-btn"  type="submit">
-                                                    حذف
-                                                </button>
+                                <tr>
+                                    <td>1</td>
+                                    {{--<td><img src="{{$currency->filename}}" height="35" class="rounded float-right" alt="{{$currency->name}}"></td>--}}
+                                    <td class="text-black" >نوشیدنی های سرد</td>
+                                    <td>
+                                        <form action=""  onsubmit="return confirm('آیا مطمئن هستید؟')" >
+                                            @csrf
+                                            <button class="btn btn-sm del-btn"  type="submit">
+                                                حذف
+                                            </button>
 
-                                            </form>
-                                        </td>
-                                        <td>
-                                            <a class="btn btn-sm del-edit "  href="{{url('/dessert-edit')}}">
-                                                ویرایش
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        {{--<td><img src="{{$currency->filename}}" height="35" class="rounded float-right" alt="{{$currency->name}}"></td>--}}
-                                        <td contenteditable="true" >سالاد فصل</td>
-                                        <td>
-                                            <form action=""  onsubmit="return confirm('آیا مطمئن هستید؟')" >
-                                                @csrf
-                                                <button class="btn btn-sm del-btn"  type="submit">
-                                                    حذف
-                                                </button>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-sm del-edit "  href="{{url('/food-edit')}}">
+                                            ویرایش
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    {{--<td><img src="{{$currency->filename}}" height="35" class="rounded float-right" alt="{{$currency->name}}"></td>--}}
+                                    <td contenteditable="true" >فست فود</td>
+                                    <td>
+                                        <form action=""  onsubmit="return confirm('آیا مطمئن هستید؟')" >
+                                            @csrf
+                                            <button class="btn btn-sm del-btn"  type="submit">
+                                                حذف
+                                            </button>
 
-                                            </form>
-                                        </td>
-                                        <td>
-                                            <a class="btn btn-sm del-edit "  href="{{url('/dessert-edit')}}">
-                                                ویرایش
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        {{--<td><img src="{{$currency->filename}}" height="35" class="rounded float-right" alt="{{$currency->name}}"></td>--}}
-                                        <td contenteditable="true" >سالاد فصل</td>
-                                        <td>
-                                            <form action=""  onsubmit="return confirm('آیا مطمئن هستید؟')" >
-                                                @csrf
-                                                <button class="btn btn-sm del-btn"  type="submit">
-                                                    حذف
-                                                </button>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-sm del-edit "  href="{{url('/food-edit')}}">
+                                            ویرایش
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    {{--<td><img src="{{$currency->filename}}" height="35" class="rounded float-right" alt="{{$currency->name}}"></td>--}}
+                                    <td contenteditable="true" >پیش غذا</td>
+                                    <td>
+                                        <form action=""  onsubmit="return confirm('آیا مطمئن هستید؟')" >
+                                            @csrf
+                                            <button class="btn btn-sm del-btn"  type="submit">
+                                                حذف
+                                            </button>
 
-                                            </form>
-                                        </td>
-                                        <td>
-                                            <a class="btn btn-sm del-edit "  href="{{url('/dessert-edit')}}">
-                                                ویرایش
-                                            </a>
-                                        </td>
-                                    </tr>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-sm del-edit "  href="{{url('/food-edit')}}">
+                                            ویرایش
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    {{--<td><img src="{{$currency->filename}}" height="35" class="rounded float-right" alt="{{$currency->name}}"></td>--}}
+                                    <td contenteditable="true" >غذاهی دریایی</td>
+                                    <td>
+                                        <form action=""  onsubmit="return confirm('آیا مطمئن هستید؟')" >
+                                            @csrf
+                                             <button class="btn btn-sm del-btn"  type="submit">
+                                                   حذف
+                                             </button>
+
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-sm del-edit "  href="{{url('/food-edit')}}">
+                                            ویرایش
+                                        </a>
+                                    </td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div><!-- /.table-responsive -->
@@ -230,6 +210,7 @@
 
         <!-- BEGIN PAGE JAVASCRIPT -->
         <script src="{{ asset('plugins/data-table/js/jquery.dataTables.min.js') }}"></script>
+
         <script src="{{ asset('plugins/data-table/js/dataTables.bootstrap.js') }}"></script>
         <script src="{{ asset('js/pages/datatable.js') }}"></script>
         <link href="{{ asset('plugins/data-table/css/dataTables.bootstrap.css') }}" rel="stylesheet">
