@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('site.latest-orders');
 });
 
+//Manage Products
+
 Route::get('/manage-products', function () {
     return view('site.manage-product');
 });
@@ -37,4 +39,18 @@ Route::get('/food-edit', function () {
 
 Route::get('/categories', function () {
     return view('site.manage-products.categories');
+});
+
+Route::get('/category-edit', function () {
+  return view('site.manage-products.category-edit');
+});
+
+//Reports
+
+Route::get('/today-report',function (){
+  return view('site.report.today');
+});
+
+Route::get('/all-report',function (){
+  return view('site.report.all');
 });

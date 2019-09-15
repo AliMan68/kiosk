@@ -19,6 +19,7 @@
 @include('include.nav-bar')
 <div id="page-content">
     <div class="row">
+
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-12">
@@ -27,7 +28,7 @@
                             <div class="portlet-title">
                                 <h3 class="title">
                                     <i class="icon-fire"></i>
-                                    ویرایش سالاد فصل
+                                    ویرایش غذا
                                 </h3>
                             </div>
                             <div class="buttons-box">
@@ -46,7 +47,7 @@
                                     <div class="form-body">
 
                                         <div class="form-group">
-                                            <label> نام </label>
+                                            <label>عنوان دسته بندی</label>
                                             <div class="input-group round">
                                                 <span class="input-group-addon">
                                                     <i class="icon-info"></i>
@@ -54,22 +55,6 @@
                                                 <input type="text" name="name" class="form-control" value="" placeholder="">
                                             </div>
                                         </div>
-
-                                        <div class="form-group">
-                                            <label>دسته بندی</label>
-                                            <div class="input-group round">
-                                                <span class="input-group-addon">
-                                                    <i class="icon-info"></i>
-                                                </span>
-                                                <select class="form-control" name="status">
-                                                    <option value="1" >فست فود</option>
-                                                    <option value="2">نوشیدنی ها </option>
-                                                    <option value="3">پیش غذاها </option>
-                                                    <option value="4">نوشیدنی های گرم </option>
-                                                </select>
-                                            </div><!-- /.input-group -->
-                                        </div><!-- /.form-group -->
-
 
                                         <div class="form-group relative">
                                             <input type="file" name="filename[]" class="form-control">
@@ -84,45 +69,8 @@
                                             </span>
                                             </div><!-- /.input-group -->
                                         </div><!-- /.form-group -->
-
-                                        <div class="form-group">
-                                            <label>قیمت سایز کوچک</label>
-                                            <div class="input-group round">
-                                                <span class="input-group-addon">
-                                                    <i class="icon-info"></i>
-                                                </span>
-                                                <input type="number" name="name" class="form-control" value="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>قیمت سایز متوسط</label>
-                                            <div class="input-group round">
-                                                <span class="input-group-addon">
-                                                    <i class="icon-info"></i>
-                                                </span>
-                                                <input type="number" name="name" class="form-control" value="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>قیمت سایز بزرگ</label>
-                                            <div class="input-group round">
-                                                <span class="input-group-addon">
-                                                    <i class="icon-info"></i>
-                                                </span>
-                                                <input type="number" name="name" class="form-control" value="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>توضیحات </label>
-                                            <div class="input-group round">
-                                                <span class="input-group-addon">
-                                                    <i class="icon-info"></i>
-                                                </span>
-                                                <input type="text" name="name" class="form-control" value="" placeholder="">
-                                            </div>
-                                        </div>
-
                                     </div>
+
                                     <div class="form-actions">
                                         <button type="submit" name="submit" class="btn btn-info btn-round">
                                             <i class="icon-check"></i>
@@ -133,10 +81,13 @@
                             </div>
                         </div><!-- /.portlet-body -->
                     </div><!-- /.portlet -->
+
                 </div>
             </div>
         </div>
-        <!-- BEGIN PAGE JAVASCRIPT -->
+
+
+
         <script src="{{ asset('plugins/data-table/js/jquery.dataTables.min.js') }}"></script>
         <script src="{{ asset('plugins/data-table/js/dataTables.bootstrap.js') }}"></script>
         <script src="{{ asset('js/pages/datatable.js') }}"></script>

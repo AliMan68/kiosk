@@ -1,4 +1,5 @@
-<script src="{{ asset('js/jquery-1.12.4.min.js') }}"></script>
+{{--<script src="{{ asset('js/jquery-1.12.4.min.js') }}"></script>--}}
+<script src="{{asset('js/jquery.js')}}"></script>
 <script src="{{ asset('plugins/jquery-migrate/jquery-migrate-1.2.1.min.js') }}"></script>
 <script src="{{ asset('js/holder.js') }}"></script>
 <script src="{{ asset('plugins/bootstrap/dist/js/bootstrap.min.js') }}"></script>

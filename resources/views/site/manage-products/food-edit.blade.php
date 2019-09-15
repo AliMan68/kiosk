@@ -56,6 +56,22 @@
                                             </div>
                                         </div>
 
+                                        <div class="form-group">
+                                            <label>دسته بندی</label>
+                                            <div class="input-group round">
+                                                <span class="input-group-addon">
+                                                    <i class="icon-info"></i>
+                                                </span>
+                                                <select class="form-control" name="status">
+                                                    <option value="1" >فست فود</option>
+                                                    <option value="2">نوشیدنی ها </option>
+                                                    <option value="3">پیش غذاها </option>
+                                                    <option value="4">نوشیدنی های گرم </option>
+                                                </select>
+                                            </div><!-- /.input-group -->
+                                        </div><!-- /.form-group -->
+
+
                                         <div class="form-group relative">
                                             <input type="file" name="filename[]" class="form-control">
                                             <label>عکس</label>

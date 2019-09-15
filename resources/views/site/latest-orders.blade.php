@@ -51,7 +51,6 @@
                                     <th>ردیف</th>
                                     {{--<th>آیکون</th>--}}
                                     <th>نام</th>
-                                    <th>تعداد</th>
                                     <th>زمان</th>
                                     <th>قیمت</th>
                                     <th>وضعیت</th>
@@ -60,9 +59,57 @@
                                 <tbody>
                                 <tr>
                                     <td> 1 <span class="new-order">سفارش جدید </span></td>
-                                    {{--<td><img src="{{$currency->filename}}" height="35" class="rounded float-right" alt="{{$currency->name}}"></td>--}}
-                                    <td class="text-black" >چیزبرگر به پنیر اضافه با دوغ بدون گاز</td>
-                                    <td class="text-black" >2</td>
+                                    <td class="text-black" style="max-width: 250px">
+
+                                        <table class="table table-hover" id="data-table">
+                                            <tbody>
+                                            <tr class="" style="background-color: #ff5c1a">
+                                                <td>1</td>
+                                                <td class="text-black" style="max-width: 160px"> پیتزا سالامون</td>
+                                                <td>
+                                                    متوسط
+                                                </td>
+                                                <td>
+                                                    5 عدد
+                                                </td>
+                                            </tr>
+                                            <tr style="background-color: #ffcf14">
+                                                <td>2</td>
+                                                <td class="text-black" style="max-width: 160px"> پیتزا پپرونی</td>
+                                                <td>
+                                                    متوسط
+                                                </td>
+                                                <td>
+                                                    5 عدد
+                                                </td>
+                                            </tr>
+                                            <tr class="" style="background-color: #ff5c1a">
+                                                <td>3</td>
+                                                <td class="text-black" style="max-width: 160px">دوغ</td>
+                                                <td>
+                                                    متوسط
+                                                </td>
+                                                <td>
+                                                    2 عدد
+                                                </td>
+                                            </tr>
+                                            <tr style="background-color: #ffcf14">
+                                                <td>4</td>
+                                                <td class="text-black" style="max-width: 160px"> سیب زمینی پنیری</td>
+                                                <td>
+                                                    بزرگ
+                                                </td>
+                                                <td>
+                                                    1 عدد
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+
+
+
+
+                                    </td>
                                     <td class="text-black" >1397/06/20 , 18:30</td>
                                     <td class="text-black" >35900 تومان</td>
                                     <td>

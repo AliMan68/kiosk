@@ -134,7 +134,7 @@
                                         </form>
                                     </td>
                                     <td>
-                                        <a class="btn btn-sm del-edit "  href="{{url('/food-edit')}}">
+                                        <a class="btn btn-sm del-edit "  href="{{url('/category-edit')}}">
                                             ویرایش
                                         </a>
                                     </td>
@@ -153,7 +153,7 @@
                                         </form>
                                     </td>
                                     <td>
-                                        <a class="btn btn-sm del-edit "  href="{{url('/food-edit')}}">
+                                        <a class="btn btn-sm del-edit "  href="{{url('/category-edit')}}">
                                             ویرایش
                                         </a>
                                     </td>
@@ -172,7 +172,7 @@
                                         </form>
                                     </td>
                                     <td>
-                                        <a class="btn btn-sm del-edit "  href="{{url('/food-edit')}}">
+                                        <a class="btn btn-sm del-edit "  href="{{url('/category-edit')}}">
                                             ویرایش
                                         </a>
                                     </td>
@@ -191,7 +191,7 @@
                                         </form>
                                     </td>
                                     <td>
-                                        <a class="btn btn-sm del-edit "  href="{{url('/food-edit')}}">
+                                        <a class="btn btn-sm del-edit "  href="{{url('/category-edit')}}">
                                             ویرایش
                                         </a>
                                     </td>

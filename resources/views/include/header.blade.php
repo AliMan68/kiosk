@@ -45,13 +45,13 @@
                     </a>
                     <ul>
                         <li>
-                            <a href="{{url('/manage-foods')}}" class="">
+                            <a href="{{url('/today-report')}}" class="">
                                 <i class="icon-briefcase"></i>
                                 <span>فروش امروز</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{url('/manage-dessert')}}" class="">
+                            <a href="{{url('/all-report')}}" class="">
                                 <i class="icon-clock"></i>
                                 <span> سایر</span>
                             </a>
