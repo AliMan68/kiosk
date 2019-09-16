@@ -30,17 +30,14 @@
                 <li class="dropdown dropdown-user">
                     <a href="#" class="dropdown-toggle dropdown-hover" data-toggle="dropdown">
                         <img src="{{ asset('images/user/48.png') }}" alt="عکس پرفایل" class="img-circle img-responsive">
-                        <span class="text-dark">رستوران کاج</span>
-                        <i class="icon-arrow-down"></i>
+                        <span class="text-black" style="color: black">رستوران کاج</span>
+                        <i class="icon-arrow-down text-danger"></i>
                     </a>
                     <ul class="dropdown-menu">
-
-
                         <li class="divider"></li>
                         <li>
                             <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                <i class="icon-power"></i>
-
+                                <i class="icon-power text-danger"></i>
                                 خروج
                             </a>
                             <form id="logout-form" action="" method="" style="display: none;">

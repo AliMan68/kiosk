@@ -11,6 +11,12 @@
 |
 */
 
+//Auth
+
+Route::get('/login', function () {
+  return view('site.auth.login');
+});
+
 Route::get('/', function () {
     return view('site.latest-orders');
 });
@@ -54,3 +60,28 @@ Route::get('/today-report',function (){
 Route::get('/all-report',function (){
   return view('site.report.all');
 });
+
+//Discount Code
+
+Route::get('/discount-code',function(){
+  return view('site.manage-discount.discount-code');
+});
+
+Route::get('/discount-edit',function(){
+  return view('site.manage-discount.edit');
+});
+
+//Profile
+
+Route::get('/profile/image',function(){
+  return view('site.profile.image');
+});
+
+Route::get('/profile/address',function(){
+  return view('site.profile.address');
+});
+
+Route::get('/profile/password',function(){
+  return view('site.profile.password');
+});
+

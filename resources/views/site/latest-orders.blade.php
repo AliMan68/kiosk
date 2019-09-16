@@ -59,7 +59,7 @@
                                 <tbody>
                                 <tr>
                                     <td> 1 <span class="new-order">سفارش جدید </span></td>
-                                    <td class="text-black" style="max-width: 250px">
+                                    <td class="text-black" style="max-width: 280px">
 
                                         <table class="table table-hover" id="data-table">
                                             <tbody>
@@ -95,7 +95,7 @@
                                             </tr>
                                             <tr style="background-color: #ffcf14">
                                                 <td>4</td>
-                                                <td class="text-black" style="max-width: 160px"> سیب زمینی پنیری</td>
+                                                <td class="text-black" style="max-width: 160px"> سیب زمینی پنیری </td>
                                                 <td>
                                                     بزرگ
                                                 </td>

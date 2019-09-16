@@ -60,17 +60,37 @@
                 </li>
 
                 <li class="">
-                    <a href="{{url("")}}" class="" data-toggle="">
+                    <a href="{{url("/discount-code")}}" class="" data-toggle="">
                         <i class="icon-diamond"></i>
                         <span>مدیریت کد تخفیف</span>
                     </a>
                 </li>
 
                 <li class="">
-                    <a href="#" class="" data-toggle="">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="icon-user"></i>
                         <span>پروفایل</span>
                     </a>
+                    <ul>
+                        <li>
+                            <a href="{{url('/profile/image')}}" class="">
+                                <i class="icon-picture"></i>
+                                <span> تصویر </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{url('/profile/address')}}" class="">
+                                <i class="icon-book-open"></i>
+                                <span> آدرس و تلفن </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{url('/profile/password')}}" class="">
+                                <i class="icon-lock"></i>
+                                <span>تغییر رمز</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
 
                 {{--<li class="">--}}
